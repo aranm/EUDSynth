@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="tGcscx" name="EUDSynth" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.EUDSynth" includeBinaryInAppConfig="1"
+              jucerVersion="4.2.4">
+  <MAINGROUP id="E89q3r" name="EUDSynth">
+    <GROUP id="{595E3873-5DE0-31E7-F285-8D6BE994BF4B}" name="Source">
+      <FILE id="zXKnfs" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <GROUP id="{6018332E-C295-ED76-C2F7-04778C016FB6}" name="GUI">
+        <FILE id="KAJrdq" name="PlaybackOverlay.cpp" compile="1" resource="0"
+              file="Source/GUI/PlaybackOverlay.cpp"/>
+        <FILE id="ongNBa" name="PlaybackOverlay.h" compile="0" resource="0"
+              file="Source/GUI/PlaybackOverlay.h"/>
+        <FILE id="H5fGZT" name="ControlPage.cpp" compile="1" resource="0" file="Source/GUI/ControlPage.cpp"/>
+        <FILE id="lWFiH0" name="ControlPage.h" compile="0" resource="0" file="Source/GUI/ControlPage.h"/>
+        <FILE id="W7Q4Qu" name="PlayPage.cpp" compile="1" resource="0" file="Source/GUI/PlayPage.cpp"/>
+        <FILE id="Nldhge" name="PlayPage.h" compile="0" resource="0" file="Source/GUI/PlayPage.h"/>
+        <FILE id="jmZ1YX" name="MainComponent.cpp" compile="1" resource="0"
+              file="Source/GUI/MainComponent.cpp"/>
+        <FILE id="fR9svt" name="MainComponent.h" compile="0" resource="0" file="Source/GUI/MainComponent.h"/>
+        <FILE id="kHPHso" name="MasterWidget.cpp" compile="1" resource="0"
+              file="Source/GUI/MasterWidget.cpp"/>
+        <FILE id="ALWziS" name="MasterWidget.h" compile="0" resource="0" file="Source/GUI/MasterWidget.h"/>
+        <FILE id="b6511C" name="KeyboardWidget.cpp" compile="1" resource="0"
+              file="Source/GUI/KeyboardWidget.cpp"/>
+        <FILE id="b94yRJ" name="KeyboardWidget.h" compile="0" resource="0"
+              file="Source/GUI/KeyboardWidget.h"/>
+        <FILE id="nArnRW" name="SequencerWidget.cpp" compile="1" resource="0"
+              file="Source/GUI/SequencerWidget.cpp"/>
+        <FILE id="uFAHoG" name="SequencerWidget.h" compile="0" resource="0"
+              file="Source/GUI/SequencerWidget.h"/>
+      </GROUP>
+      <GROUP id="{F984135A-584F-7AD1-71A2-D883B5AED761}" name="Audio">
+        <FILE id="n7owmO" name="DrumController.cpp" compile="1" resource="0"
+              file="Source/Audio/DrumController.cpp"/>
+        <FILE id="ZlJLCa" name="DrumController.h" compile="0" resource="0"
+              file="Source/Audio/DrumController.h"/>
+        <FILE id="LhjKuP" name="AudioControl.cpp" compile="1" resource="0"
+              file="Source/Audio/AudioControl.cpp"/>
+        <FILE id="U69L0g" name="AudioControl.h" compile="0" resource="0" file="Source/Audio/AudioControl.h"/>
+        <FILE id="HBI18G" name="SynthDrum.cpp" compile="1" resource="0" file="Source/Audio/SynthDrum.cpp"/>
+        <FILE id="jZdJSh" name="SynthDrum.h" compile="0" resource="0" file="Source/Audio/SynthDrum.h"/>
+        <FILE id="XFsCCZ" name="Envelope.cpp" compile="1" resource="0" file="Source/Audio/Envelope.cpp"/>
+        <FILE id="rJfzw1" name="Envelope.h" compile="0" resource="0" file="Source/Audio/Envelope.h"/>
+        <FILE id="SlfY8Z" name="Sequencer.cpp" compile="1" resource="0" file="Source/Audio/Sequencer.cpp"/>
+        <FILE id="DYmopR" name="Sequencer.h" compile="0" resource="0" file="Source/Audio/Sequencer.h"/>
+        <FILE id="qwQatG" name="WaveGenerator.cpp" compile="1" resource="0"
+              file="Source/Audio/WaveGenerator.cpp"/>
+        <FILE id="dKWMrI" name="WaveGenerator.h" compile="0" resource="0" file="Source/Audio/WaveGenerator.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="EUDSynth"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="EUDSynth"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../Documents/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
